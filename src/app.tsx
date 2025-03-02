@@ -3,7 +3,7 @@ import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { Sections } from './components/Sections';
 import { CommitAndResetSection } from './components/Sections/CommitAndResetSection/CommitAndResetSection';
-import { ConfigSection } from './components/Sections/ConfigSection';
+// import { ConfigSection } from './components/Sections/ConfigSection';
 import { ThemeProvider } from './components/ThemeProvider';
 import { useQRScoutState } from './store/store';
 
@@ -40,7 +40,7 @@ export function App() {
               <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 <Sections />
                 <CommitAndResetSection />
-                <ConfigSection />
+                {/* <ConfigSection /> */}
               </div>
             </form>
           </main>

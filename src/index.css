@@ -8,15 +8,15 @@ body {
 }
 
 @font-face {
-  font-family: 'SF Sports Night';
-  src: url('./assets/fonts/SF Sports Night.ttf') format('truetype');
+  font-family: 'ROBO';
+  src: url('./assets/fonts/ROBO.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SF Sports Night NS';
-  src: url('./assets/fonts/SF Sports Night NS.ttf') format('truetype');
+  font-family: 'ROBO';
+  src: url('./assets/fonts/ROBO.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

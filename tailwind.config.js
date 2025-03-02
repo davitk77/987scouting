@@ -5,12 +5,12 @@ module.exports = {
   	extend: {
   		fontFamily: {
   			rhr: [
-  				'SF Sports Night',
-  				'sans-serif'
+  				'ROBO',
+  				'ROBO'
   			],
   			'rhr-ns': [
-  				'SF Sports Night NS',
-  				'sans-serif'
+  				'ROBO',
+  				'ROBO'
   			]
   		},
   		colors: {
