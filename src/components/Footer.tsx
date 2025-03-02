@@ -10,7 +10,7 @@ export function Footer() {
         <div className="h-24 w-96">
           <Logo />
         </div>
-        {teamNumber !== 2713 && (
+        {teamNumber !== 987 && (
           <>
             <Heart className="text-primary size-8 fill-primary" />
             <span className="text-2xl text-primary font-rhr-ns">
