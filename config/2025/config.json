@@ -135,8 +135,8 @@
           "code": "CPos",
           "defaultValue": "",
           "choices": {
-            "Deep": "High",
-            "Shallow": "Low"
+            "Deep": "Low",
+            "Shallow": "High"
           }
         }
       ]
@@ -151,14 +151,6 @@
           "required": false,
           "code": "Mved",
           "defaultValue": false
-        },
-        {
-          "title": "Timer",
-          "description": "The time it took for the robot to finish autonomous.",
-          "type": "timer",
-          "required": false,
-          "code": "timer",
-          "defaultValue": 0
         },
         {
           "title": "Coral L1 Scored",
@@ -222,10 +214,13 @@
         },
         {
           "title": "Dislodged Algae?",
-          "type": "boolean",
+          "description": "The number of Algae disloged during autonomous.",
+          "type": "counter",
           "required": false,
-          "code": "dto",
-          "defaultValue": false
+          "code": "DALG",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
         },
         {
           "title": "Auto Foul",
@@ -243,10 +238,13 @@
       "fields": [
         {
           "title": "Dislodged Algae?",
-          "type": "boolean",
+          "description": "The number of Algae disloged during autonomous.",
+          "type": "counter",
           "required": false,
-          "code": "daT",
-          "defaultValue": false
+          "code": "DALGT",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
         },
         {
           "title": "Pickup Location",
@@ -338,11 +336,10 @@
         },
         {
           "title": "Touched Opposing Cage?",
-          "type": "counter",
+         "type": "boolean",
           "required": false,
           "code": "Fou/Tech",
-          "defaultValue": 0,
-          "step": 1
+          "defaultValue": false
         },
         {
           "title": "Died?",
@@ -382,26 +379,6 @@
     {
       "name": "Postmatch",
       "fields": [
-        {
-          "title": "Offense Skill",
-          "type": "range",
-          "required": false,
-          "code": "or",
-          "defaultValue": 3,
-          "min": 1,
-          "max": 5,
-          "step": 1
-        },
-        {
-          "title": "Defensive Skill",
-          "type": "range",
-          "required": false,
-          "code": "dr",
-          "defaultValue": 3,
-          "min": 1,
-          "max": 5,
-          "step": 1
-        },
         {
           "title": "Yellow/Red Card",
           "type": "select",
