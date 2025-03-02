@@ -1,8 +1,8 @@
 {
-  "title": "QRScout",
-  "page_title": "Reefscape",
+  "title": "987Scouting",
+  "page_title": "Team 987 Scouting Form",
   "delimiter": "\t",
-  "teamNumber": 2713,
+  "teamNumber": 987,
   "theme": {
     "light": {
       "background": "0 0% 100%",
@@ -11,7 +11,7 @@
       "card_foreground": "0 0% 3.9%",
       "popover": "0 0% 100%",
       "popover_foreground": "0 0% 3.9%",
-      "primary": "354.44 71.3% 47.9%",
+      "primary": "360 71.3% 29%",
       "primary_foreground": "0 85.7% 97.3%",
       "secondary": "0 0% 96.1%",
       "secondary_foreground": "0 0% 9%",
@@ -37,7 +37,7 @@
       "card_foreground": "0 0% 98%",
       "popover": "0 0% 3.9%",
       "popover_foreground": "0 0% 98%",
-      "primary": "354.44 71.3% 47.9%",
+      "primary": "360 71.3% 29%",
       "primary_foreground": "0 85.7% 97.3%",
       "secondary": "0 0% 14.9%",
       "secondary_foreground": "0 0% 98%",
@@ -62,8 +62,8 @@
       "name": "Prematch",
       "fields": [
         {
-          "title": "Scouter Initials",
-          "description": "Enter the initials of the scouter.",
+          "title": "Scouter Name",
+          "description": "Enter the name of the scouter.",
           "type": "text",
           "required": true,
           "code": "scouter",
@@ -114,9 +114,9 @@
           "code": "Prsp",
           "defaultValue": "",
           "choices": {
-            "R1": "Left",
-            "R2": "Middle",
-            "R3": "Right"
+            "Left": "X",
+            "Middle": "Y",
+            "Right": "Z"
           }
         },
         {
@@ -135,8 +135,8 @@
           "code": "CPos",
           "defaultValue": "",
           "choices": {
-            "SP1": "Deep",
-            "SP2": "Shallow"
+            "Deep": "High",
+            "Shallow": "Low"
           }
         }
       ]
@@ -255,10 +255,10 @@
           "code": "TGPL",
           "defaultValue": "",
           "choices": {
-            "1": "None",
-            "2": "Ground",
-            "3": "Human Player",
-            "4": "Both"
+            "None": "None",
+            "GND": "Ground",
+            "HP": "Human Player",
+            "Both": "Both"
           },
           "multiSelect": true
         },
@@ -323,14 +323,14 @@
           "step": 1
         },
         {
-          "title": "Crossed Feild/Played Defense?",
+          "title": "Played Defense?",
           "type": "boolean",
           "required": false,
           "code": "CFPDT",
           "defaultValue": false
         },
         {
-          "title": "Tipped/Fell Over?",
+          "title": "Fell Over?",
           "type": "boolean",
           "required": false,
           "code": "TFOT",
@@ -364,10 +364,10 @@
           "defaultValue": "No",
           "choices": {
             "No": "Not Parked",
-            "P": "Parked",
-            "Sc": "Shallow Climb",
-            "Dc": "Deep Climb",
-            "Fc": "Failed Climb"
+            "Park": "Parked",
+            "LOW": "Low Climb",
+            "HIGH": "High Climb",
+            "Fail": "Failed Climb"
           }
         },
         {
