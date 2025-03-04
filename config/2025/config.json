@@ -171,7 +171,7 @@
           "defaultValue": 0,
           "min": 0,
           "step": 1
-        },
+        },        
         {
           "title": "Coral L3 Scored",
           "description": "The number of level 3 coral scored during autonomous.",
