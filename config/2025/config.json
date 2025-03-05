@@ -153,6 +153,46 @@
           "defaultValue": false
         },
         {
+          "title": "Pickup Location",
+          "type": "select",
+          "required": false,
+          "code": "TGPLA",
+          "defaultValue": "",
+          "choices": {
+            "None": "None",
+            "GND": "Ground",
+            "HP": "Human Player",
+            "Both": "Both"
+          },
+          "multiSelect": true
+        },
+        {
+          "title": "First Scoring Position on the Reef",
+          "description": "The first position of scoring of the robot.",
+          "type": "select",
+          "required": false,
+          "code": "FS",
+          "defaultValue": "",
+          "choices": {
+            "A": "A",
+            "B": "B",
+            "C": "C",
+            "D": "D",
+            "E": "E",
+            "F": "F"
+          }
+        },
+        {
+          "title": "Coral Missed",
+          "description": "The number of coral missed during autonomous.",
+          "type": "counter",
+          "required": false,
+          "code": "CLMS",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
           "title": "Coral L1 Scored",
           "description": "The number of level 1 coral scored during autonomous.",
           "type": "counter",
@@ -161,6 +201,7 @@
           "defaultValue": 0,
           "min": 0,
           "step": 1
+          
         },
         {
           "title": "Coral L2 Scored",
@@ -213,7 +254,7 @@
           "step": 1
         },
         {
-          "title": "Dislodged Algae?",
+          "title": "Algae Knocked out",
           "description": "The number of Algae disloged during autonomous.",
           "type": "counter",
           "required": false,
@@ -223,6 +264,16 @@
           "step": 1
         },
         {
+          "title": "Total Game Pieces Scored in Auto",
+          "description": "Total Game Pieces scored in auto including both coral and algae. ",
+          "type": "range",
+          "required": false,
+          "code": "or",
+          "defaultValue": 0,
+          "min": 1,
+          "max": 15
+        },
+        {
           "title": "Auto Foul",
           "type": "counter",
           "required": false,
@@ -230,22 +281,20 @@
           "defaultValue": 0,
           "min": 0,
           "step": 1
+        },
+        {
+          "title": "Auto Description",
+          "description": "In a few words please describe their auto to the best of your ability",
+          "type": "text",
+          "required": false,
+          "code": "SCD",
+          "defaultValue": ""
         }
       ]
     },
     {
       "name": "Teleop",
       "fields": [
-        {
-          "title": "Dislodged Algae?",
-          "description": "The number of Algae disloged during autonomous.",
-          "type": "counter",
-          "required": false,
-          "code": "DALGT",
-          "defaultValue": 0,
-          "min": 0,
-          "step": 1
-        },
         {
           "title": "Pickup Location",
           "type": "select",
@@ -259,6 +308,32 @@
             "Both": "Both"
           },
           "multiSelect": true
+        },
+        {
+          "title": "Prefered Loading Location",
+          "type": "select",
+          "required": false,
+          "code": "PLL",
+          "defaultValue": "",
+          "choices": {
+            "Z1": "Z1",
+            "Z2": "Z2",
+            "Z3": "Z3",
+            "K1": "K1",
+            "K2": "K2",
+            "K3": "K3"
+          },
+          "multiSelect": true
+        },
+        {
+          "title": "Coral Missed",
+          "description": "The number of coral dropped during teleop.",
+          "type": "counter",
+          "required": false,
+          "code": "CLMS",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
         },
         {
           "title": "Coral L1 Scored",
@@ -296,6 +371,16 @@
           "type": "counter",
           "required": false,
           "code": "CLFT",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
+          "title": "Algae Knocked out",
+          "description": "The number of Algae disloged during autonomous.",
+          "type": "counter",
+          "required": false,
+          "code": "DALGT",
           "defaultValue": 0,
           "min": 0,
           "step": 1
@@ -354,17 +439,37 @@
       "name": "Endgame",
       "fields": [
         {
+          "title": "Amount of time it takes for climb",
+          "description": "The time it took for the robot to finish climbing.",
+          "type": "timer",
+          "required": false,
+          "code": "timer",
+          "defaultValue": 0
+        },
+        {
           "title": "End Position",
           "type": "select",
           "required": true,
           "code": "epo",
-          "defaultValue": "No",
+          "defaultValue": "",
           "choices": {
             "No": "Not Parked",
             "Park": "Parked",
             "LOW": "Low Climb",
             "HIGH": "High Climb",
             "Fail": "Failed Climb"
+          }
+        },
+        {
+          "title": "Climb Cage",
+          "type": "select",
+          "required": true,
+          "code": "CC",
+          "defaultValue": "",
+          "choices": {
+            "Left": "Left",
+            "Middle": "Middle",
+            "Right": "Right"
           }
         },
         {
