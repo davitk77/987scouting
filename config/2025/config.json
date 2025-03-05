@@ -330,7 +330,7 @@
           "description": "The number of coral dropped during teleop.",
           "type": "counter",
           "required": false,
-          "code": "CLMS",
+          "code": "CLMSS",
           "defaultValue": 0,
           "min": 0,
           "step": 1
@@ -443,7 +443,7 @@
           "description": "The time it took for the robot to finish climbing.",
           "type": "timer",
           "required": false,
-          "code": "timer",
+          "code": "timerr",
           "defaultValue": 0
         },
         {
