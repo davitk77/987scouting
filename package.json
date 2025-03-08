@@ -63,5 +63,10 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
     "vite": "^5.4.11"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
