@@ -242,6 +242,15 @@
           "defaultValue": 0,
           "min": 0,
           "step": 1
+        },  {
+          "title": "Algae Missed",
+          "description": "The number of Algae missed in the barge during teleop.",
+          "type": "counter",
+          "required": false,
+          "code": "AALGMS",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
         },
         {
           "title": "Processor Algae Scored",
@@ -262,16 +271,6 @@
           "defaultValue": 0,
           "min": 0,
           "step": 1
-        },
-        {
-          "title": "Total Game Pieces Scored in Auto",
-          "description": "Total Game Pieces scored in auto including both coral and algae. ",
-          "type": "range",
-          "required": false,
-          "code": "or",
-          "defaultValue": 0,
-          "min": 1,
-          "max": 15
         },
         {
           "title": "Auto Foul",
@@ -326,6 +325,22 @@
           "multiSelect": true
         },
         {
+          "title": "Bad Source Human Player?",
+          "description": "Is the Source Human Player Bad?",
+          "type": "boolean",
+          "required": false,
+          "code": "SCHP",
+          "defaultValue": false
+        },
+        {
+          "title": "Bad Proccessor Human Player?",
+          "description": "Is the Proccesor Human Player Bad?",
+          "type": "boolean",
+          "required": false,
+          "code": "PCHP",
+          "defaultValue": false
+        },
+        {
           "title": "Coral Missed",
           "description": "The number of coral dropped during teleop.",
           "type": "counter",
@@ -337,7 +352,7 @@
         },
         {
           "title": "Coral L1 Scored",
-          "description": "The number of level 1 coral scored during autonomous.",
+          "description": "The number of level 1 coral scored during teleop.",
           "type": "counter",
           "required": false,
           "code": "CLOT",
@@ -347,7 +362,7 @@
         },
         {
           "title": "Coral L2 Scored",
-          "description": "The number of level 2 coral scored during autonomous.",
+          "description": "The number of level 2 coral scored during teleop.",
           "type": "counter",
           "required": false,
           "code": "CLTT",
@@ -357,7 +372,7 @@
         },
         {
           "title": "Coral L3 Scored",
-          "description": "The number of level 3 coral scored during autonomous.",
+          "description": "The number of level 3 coral scored during teleop.",
           "type": "counter",
           "required": false,
           "code": "CLThT",
@@ -367,7 +382,7 @@
         },
         {
           "title": "Coral L4 Scored",
-          "description": "The number of level 4 coral scored during autonomous.",
+          "description": "The number of level 4 coral scored during teleop.",
           "type": "counter",
           "required": false,
           "code": "CLFT",
@@ -377,7 +392,7 @@
         },
         {
           "title": "Algae Knocked out",
-          "description": "The number of Algae disloged during autonomous.",
+          "description": "The number of Algae disloged during teleop.",
           "type": "counter",
           "required": false,
           "code": "DALGT",
@@ -387,7 +402,7 @@
         },
         {
           "title": "Barge Algae Scored",
-          "description": "The number of Algae scored in the barge during autonomous.",
+          "description": "The number of Algae scored in the barge during teleop.",
           "type": "counter",
           "required": false,
           "code": "BAST",
@@ -396,8 +411,18 @@
           "step": 1
         },
         {
+          "title": "Algae Missed",
+          "description": "The number of Algae missed in the barge during teleop.",
+          "type": "counter",
+          "required": false,
+          "code": "ALGMS",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
           "title": "Processor Algae Scored",
-          "description": "The number of Algae scored in the processor during autonomous.",
+          "description": "The number of Algae scored in the processor during teleop.",
           "type": "counter",
           "required": false,
           "code": "PAST",
