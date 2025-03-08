@@ -286,7 +286,7 @@
           "description": "In a few words please describe their auto to the best of your ability",
           "type": "text",
           "required": false,
-          "code": "SCD",
+          "code": "ATD",
           "defaultValue": ""
         }
       ]
@@ -503,6 +503,14 @@
           "required": false,
           "code": "DEFEg",
           "defaultValue": false
+        },
+        {
+          "title": "Climb Description",
+          "description": "In a few words please describe their climb to the best of your ability",
+          "type": "text",
+          "required": false,
+          "code": "CBD",
+          "defaultValue": ""
         }
       ]
     },
