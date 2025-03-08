@@ -4,15 +4,12 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/987scouting/',  // Relative path for assets and base URL
+  base: '/987scout/',
   plugins: [react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
   },
-  build: {
-    outDir: 'dist',  // Output directory for build
-    assetsDir: '',  
-  },
+  assetsInclude: ['assets/**/*'],
 });
