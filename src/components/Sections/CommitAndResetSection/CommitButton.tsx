@@ -8,7 +8,7 @@ export type CommitButtonProps = {
 export function CommitButton(props: CommitButtonProps) {
   return (
     <Button onClick={props.onClick} disabled={props.disabled}>
-      Commit
+      Submit
     </Button>
   );
 }

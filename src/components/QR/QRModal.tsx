@@ -38,7 +38,7 @@ export function QRModal(props: QRModalProps) {
       <DialogTrigger asChild>
         <Button disabled={props.disabled}>
           <QrCode className="size-5" />
-          Commit
+          Submit
         </Button>
       </DialogTrigger>
       <DialogContent>
