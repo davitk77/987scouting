@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/987scouting/',
+  base: './987scouting/',
   plugins: [react()],
   resolve: {
     alias: {
