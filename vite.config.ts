@@ -13,6 +13,6 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',  // Output directory for build
-    // assetsDir: 'assets',  // Assets directory within dist
+    assetsDir: '',  
   },
 });
