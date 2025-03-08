@@ -11,8 +11,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  assetsInclude: ['assets/**/*'],
   build: {
-    outDir: 'dist',  // Build output folder (can be 'dist' or any folder name you choose)
+    outDir: 'dist',  // Output directory for build
+    assetsDir: 'assets',  // Assets directory within dist
   },
 });
