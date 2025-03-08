@@ -285,7 +285,7 @@
           "title": "Auto Description",
           "description": "In a few words please describe their auto to the best of your ability",
           "type": "text",
-          "required": false,
+          "required": true,
           "code": "ATD",
           "defaultValue": ""
         }
