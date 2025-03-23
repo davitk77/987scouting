@@ -126,18 +126,6 @@
           "required": false,
           "code": "noShow",
           "defaultValue": false
-        },
-        {
-          "title": "Cage Position",
-          "description": "The starting level of the cage",
-          "type": "select",
-          "required": true,
-          "code": "CPos",
-          "defaultValue": "",
-          "choices": {
-            "Deep": "Low",
-            "Shallow": "High"
-          }
         }
       ]
     },
@@ -438,6 +426,13 @@
           "defaultValue": false
         },
         {
+          "title": "Defended Against?",
+          "type": "boolean",
+          "required": false,
+          "code": "CFPDT2",
+          "defaultValue": false
+        },
+        {
           "title": "Fell Over?",
           "type": "boolean",
           "required": false,
@@ -466,10 +461,17 @@
         {
           "title": "Amount of time it takes for climb",
           "description": "The time it took for the robot to finish climbing.",
-          "type": "timer",
+          "type": "select",
           "required": false,
           "code": "timerr",
-          "defaultValue": 0
+          "defaultValue": "",
+          "choices": {
+            "2": "2s",
+            "3": "3s",
+            "4": "4s",
+            "5": "5s",
+            "6": "6s"
+          }
         },
         {
           "title": "End Position",
@@ -537,7 +539,7 @@
           "code": "or",
           "defaultValue": 3,
           "min": 1,
-          "max": 6
+          "max": 5
         },
         {
           "title": "Comments",
@@ -546,7 +548,7 @@
           "code": "co",
           "defaultValue": "",
           "min": 0,
-          "max": 50
+          "max": 500
         }
       ]
     }
