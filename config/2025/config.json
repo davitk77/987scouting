@@ -500,13 +500,6 @@
           }
         },
         {
-          "title": "Defended?",
-          "type": "boolean",
-          "required": false,
-          "code": "DEFEg",
-          "defaultValue": false
-        },
-        {
           "title": "Climb Description",
           "description": "In a few words please describe their climb to the best of your ability",
           "type": "text",
