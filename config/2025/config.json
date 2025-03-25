@@ -466,6 +466,7 @@
           "code": "timerr",
           "defaultValue": "",
           "choices": {
+            "0": "No Climb",
             "2": "2s",
             "3": "3s",
             "4": "4s",
