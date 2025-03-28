@@ -419,6 +419,15 @@
           "step": 1
         },
         {
+          "title": "Teleop Foul",
+          "type": "counter",
+          "required": false,
+          "code": "tef",
+          "defaultValue": 0,
+          "min": 0,
+          "step": 1
+        },
+        {
           "title": "Played Defense?",
           "type": "boolean",
           "required": false,
@@ -491,7 +500,7 @@
         {
           "title": "Climb Cage",
           "type": "select",
-          "required": true,
+          "required": false,
           "code": "CC",
           "defaultValue": "",
           "choices": {
