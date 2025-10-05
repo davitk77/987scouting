@@ -72,7 +72,7 @@
         },
         {
           "title": "Match Number",
-          "description": "Enter the match number.",
+          "description": "Enter the match number",
           "type": "number",
           "required": true,
           "code": "matchNumber",
